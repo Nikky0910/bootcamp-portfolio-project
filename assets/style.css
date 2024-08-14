@@ -44,7 +44,7 @@ header nav ul li a{
 figure {
     height: 200px;
     width: 100%;
-    background-image: url("./assets/header-banner-2.jpg");
+    background-image: url("./header-banner-2.jpg");
     background-size: cover;
     background-position: center;
     display:flex;
