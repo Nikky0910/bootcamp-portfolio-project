@@ -69,28 +69,45 @@ body .background-image h3{
 p {
     font-size: 20px;
 }
+footer {
+    float: right;
+    padding: 2rem 4rem 2rem 3rem;
+}
 main {
     width: 100%;
     padding: 1rem;
 }
-main section.wrapper {
+main .wrapper {
     display: flex;
     width: 100%;
     padding: 2rem;
 }
-section.wrapper .title {
+.wrapper .title {
     width: 20%;
     padding: 0 1rem 0 10rem;
+    border-right: 2px solid var(--dark-color);
 }
-section.wrapper .title h2 {
+.wrapper .title h2 {
     font-size: 50px;
     text-align: right;
     color: var(--dark-color);
     width: 100%;
 }
+.wrapper .content ul {
+    width: 100%;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+.wrapper .content ul li {
+    padding: 0;
+}
+.wrapper .content ul li a {
+    color: var(--dark-color);
+    font-weight: 500;
+}
 .content {
     width: 80%;
-    border-left: 2px solid var(--dark-color);
     padding: 0 3rem;
 }
 .content .inner-wrapper {
@@ -106,26 +123,6 @@ section.wrapper .title h2 {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
-
-.wrapper .content ul {
-    width: 100%;
-    justify-content: space-between;
-    height: 100%;
-    align-items: center;
-}
-.wrapper .content ul li {
-    padding: 0;
-}
-.wrapper .content ul li a {
-    color: var(--dark-color);
-    font-weight: 500;
-}
-
-footer {
-    float: right;
-    padding: 2rem 4rem 2rem 3rem;
-}
-
 .go-up  li a {
     text-decoration: none;
     color: var(--light-color);
@@ -195,3 +192,40 @@ footer {
     position: relative;
 }
 
+@media screen and (max-width: 1937px) {
+    main .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 1rem;
+    }
+    .wrapper .title {
+        flex-basis: 100%;
+        padding: 2rem;
+        border-right: none;
+    }
+    .wrapper .title h2 {
+        font-size: 50px;
+        text-align: center;
+        color: var(--dark-color);
+        width: 100%;
+        padding: 1rem;
+    }
+    .wrapper .content {
+        flex: 1 0 100%;
+    }
+}
+@media screen and (max-width: 1021px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem 4rem 1rem 0;
+        align-items: center;
+        background-color: var(--dark-color);
+    }
+    h1 {
+        font-size: 40px;
+        padding:  0.5rem 1rem;
+    }
+
+}
