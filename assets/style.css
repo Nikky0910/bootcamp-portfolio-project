@@ -125,12 +125,12 @@ footer {
     float: right;
     padding: 2rem 4rem 2rem 3rem;
 }
-.go-up li {
-    background-color: var(--dark-color);
-}
+
 .go-up  li a {
     text-decoration: none;
     color: var(--light-color);
+    background-color: var(--dark-color);
+    padding: 1rem;
 }
 .go-up  li a:hover{
     font-size: smaller;
@@ -161,17 +161,37 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 1rem;
+    position: relative;
+}
+#first-project h4,
+#second-project h4,
+#third-project h4,
+#fourth-project h4,
+#fifth-project h4 {
+    background-color: var(--dark-color);
+    width: max-content;
+    position: absolute;
+    bottom: 1rem;
+    color: var(--light-color);
+    padding: 0.5rem 1.5rem;
+    line-height: 1.5;
+    font-size: 20px;
+    text-align: center;
 }
 #second-project {
     background-image: url("./images/Code-refactor-project.png");
+    position: relative;
 }
 #third-project {
     background-image: url("./images/Prework-Study-Guide-project.png");
+    position: relative;
 }
 #fourth-project {
     background-image: url("./images/pexels-danny-meneses-340146-943096.jpg");
+    position: relative;
 }
 #fifth-project {
     background-image: url("./images/pexels-luis-gomes-166706-546819.jpg");
+    position: relative;
 }
 
