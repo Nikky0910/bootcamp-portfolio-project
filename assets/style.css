@@ -32,10 +32,10 @@ header nav {
     flex: 1 0 auto;
     justify-content: flex-end;
 }
-header nav ul {
+ul {
     display: flex;
 }
-header nav ul li {
+ul li {
     padding: 1rem;
     font-size: 25px;
 }
@@ -64,6 +64,14 @@ main .wrapper {
 }
 p {
     font-size: 20px;
+}
+.content ul {
+    width: 100%;
+    justify-content: space-between;
+}
+.content ul li a {
+    color: var(--dark-color);
+    font-weight: 500;
 }
 .background-image {
     height: 800px;
@@ -95,6 +103,7 @@ p {
 
 article section {
     display: flex;
+    flex: 1 0 auto;
 }
 article section figure {
     margin-top: 1rem;
