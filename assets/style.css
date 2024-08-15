@@ -6,8 +6,8 @@
 }
 
 :root {
-    --light-color: hsl(181, 48%, 79%); 
-    --dark-color: hsl(177, 34%, 14%); 
+    --light-color: hsl(0, 0%, 95%); 
+    --dark-color: hsl(180, 4%, 20%);
 }
 
 ul {
@@ -24,7 +24,7 @@ h1 {
     padding: 0 0.5rem 0 7rem;
     color: var(--dark-color);
     font-weight: 700;
-    font-size: 50px;
+    font-size: 60px;
 }
 header nav {
     display: flex;
@@ -42,22 +42,52 @@ header nav ul li a{
     color: var(--light-color);
 }
 figure {
-    height: 200px;
+    height: 800px;
     width: 100%;
-    background-image: url("./header-banner-2.jpg");
+    background-image: url("./images/IMG_0476.JPG");
+    opacity: 0.8;
     background-size: cover;
-    background-position: center;
+    background-position: 100% 37%;
+    background-repeat: repeat;
     display:flex;
     position: relative;
     justify-content: flex-end;
 
 }
-figure h2{
+figure h3{
     z-index: 3;
-    color: var(--dark-color);
+    color: black;
     background-color: var(--light-color);
     position: absolute;
     bottom: 30px;
-    right: 100px;
+    right: 80px;
     padding: 0.5rem;
+    font-size: 30px;
+}
+main {
+    width: 100%;
+    padding: 1rem;
+}
+main section {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+}
+.title {
+    width: 20%;
+    padding: 0 1rem 0 10rem;
+}
+.title h2 {
+    font-size: 50px;
+    text-align: right;
+    color: var(--dark-color);
+    width: 100%;
+}
+.content {
+    width: 80%;
+    border-left: 2px solid var(--dark-color);
+    padding: 0 1rem;
+}
+p {
+    font-size: 20px;
 }
