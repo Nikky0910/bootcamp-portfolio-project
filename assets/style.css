@@ -8,6 +8,7 @@
 :root {
     --light-color: hsl(0, 0%, 95%); 
     --dark-color: hsl(180, 4%, 20%);
+    --image-border: hsl(0, 0%, 45%);
 }
 
 ul {
@@ -28,7 +29,7 @@ h1 {
 }
 header nav {
     display: flex;
-    width: 100%;
+    flex: 1 0 auto;
     justify-content: flex-end;
 }
 header nav ul {
@@ -41,19 +42,7 @@ header nav ul li {
 header nav ul li a{
     color: var(--light-color);
 }
-figure {
-    height: 800px;
-    width: 100%;
-    background-image: url("./images/IMG_0476.JPG");
-    opacity: 0.8;
-    background-size: cover;
-    background-position: 100% 37%;
-    background-repeat: repeat;
-    display:flex;
-    position: relative;
-    justify-content: flex-end;
 
-}
 figure h3{
     z-index: 3;
     color: black;
@@ -68,10 +57,25 @@ main {
     width: 100%;
     padding: 1rem;
 }
-main section {
+main .wrapper {
     display: flex;
     width: 100%;
-    padding: 1rem;
+    padding: 2rem;
+}
+p {
+    font-size: 20px;
+}
+.background-image {
+    height: 800px;
+    width: 100%;
+    background-image: url("./images/IMG_0476.JPG");
+    opacity: 0.8;
+    background-size: cover;
+    background-position: 100% 37%;
+    background-repeat: repeat;
+    display:flex;
+    position: relative;
+    justify-content: flex-end;
 }
 .title {
     width: 20%;
@@ -86,8 +90,52 @@ main section {
 .content {
     width: 80%;
     border-left: 2px solid var(--dark-color);
-    padding: 0 1rem;
+    padding: 0 3rem;
 }
-p {
-    font-size: 20px;
+
+article section {
+    display: flex;
 }
+article section figure {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.left {
+    margin-left: 1rem;
+}
+.right {
+    margin-right: 1rem;
+}
+
+.box {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+    border: 4px solid var(--image-border);
+}
+
+#first-project {
+    border: 4px solid var(--image-border);
+    background-size: cover;
+    background-image: url("./images/Landing-page-project.png");
+    height: 600px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 1rem;
+}
+#second-project {
+    background-image: url("./images/Code-refactor-project.png");
+}
+#third-project {
+    background-image: url("./images/Prework-Study-Guide-project.png");
+}
+#fourth-project {
+    background-image: url("./images/pexels-danny-meneses-340146-943096.jpg");
+}
+#fifth-project {
+    background-image: url("./images/pexels-luis-gomes-166706-546819.jpg");
+}
+
