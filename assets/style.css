@@ -100,6 +100,13 @@ p {
     border-left: 2px solid var(--dark-color);
     padding: 0 3rem;
 }
+.go-up  li a {
+    text-decoration: none;
+}
+.go-up  li a:hover{
+    color: hsl(348, 90%, 35%);
+    text-decoration: underline;
+}
 
 article section {
     display: flex;
