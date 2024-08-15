@@ -39,53 +39,11 @@ ul li {
     padding: 1rem;
     font-size: 25px;
 }
-header nav ul li a{
+ul li a{
     color: var(--light-color);
 }
 
-figure h3{
-    z-index: 3;
-    color: black;
-    background-color: var(--light-color);
-    position: absolute;
-    bottom: 30px;
-    right: 80px;
-    padding: 0.5rem;
-    font-size: 30px;
-}
-main {
-    width: 100%;
-    padding: 1rem;
-}
-main .wrapper {
-    display: flex;
-    width: 100%;
-    padding: 2rem;
-}
-p {
-    font-size: 20px;
-}
-article section {
-    display: flex;
-    flex: 1 0 auto;
-}
-article section figure {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-footer {
-    float: right;
-    padding: 2rem 4rem 2rem 3rem;
-}
-.content ul {
-    width: 100%;
-    justify-content: space-between;
-}
-.content ul li a {
-    color: var(--dark-color);
-    font-weight: 500;
-}
-.background-image {
+body .background-image {
     height: 800px;
     width: 100%;
     background-image: url("./images/IMG_0476.JPG");
@@ -97,11 +55,34 @@ footer {
     position: relative;
     justify-content: flex-end;
 }
-.title {
+
+body .background-image h3{
+    z-index: 3;
+    color: black;
+    background-color: var(--light-color);
+    position: absolute;
+    bottom: 30px;
+    right: 80px;
+    padding: 0.5rem;
+    font-size: 30px;
+}
+p {
+    font-size: 20px;
+}
+main {
+    width: 100%;
+    padding: 1rem;
+}
+main section.wrapper {
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+}
+section.wrapper .title {
     width: 20%;
     padding: 0 1rem 0 10rem;
 }
-.title h2 {
+section.wrapper .title h2 {
     font-size: 50px;
     text-align: right;
     color: var(--dark-color);
@@ -112,13 +93,47 @@ footer {
     border-left: 2px solid var(--dark-color);
     padding: 0 3rem;
 }
+.content .inner-wrapper {
+    display: flex;
+    flex: 1 0 auto;
+    width: 100%;
+}
+.content > a {
+    width: 100%;
+}
+.content .inner-wrapper  a {
+    width: 50%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 
+.wrapper .content ul {
+    width: 100%;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+.wrapper .content ul li {
+    padding: 0;
+}
+.wrapper .content ul li a {
+    color: var(--dark-color);
+    font-weight: 500;
+}
+
+footer {
+    float: right;
+    padding: 2rem 4rem 2rem 3rem;
+}
+.go-up li {
+    background-color: var(--dark-color);
+}
 .go-up  li a {
     text-decoration: none;
+    color: var(--light-color);
 }
 .go-up  li a:hover{
-    color: hsl(348, 90%, 35%);
-    text-decoration: underline;
+    font-size: smaller;
 }
 
 .left {
@@ -135,16 +150,6 @@ footer {
     height: 300px;
     width: 100%;
     border: 4px solid var(--image-border);
-}
-main > section.wrapper a {
-    width: 100%;
-}
-main > section.wrapper section a {
-    width: 49%;
-    margin: .5rem;
-}
-main > section.wrapper section a figure {
-    margin: 0;
 }
 
 #first-project {
