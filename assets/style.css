@@ -100,6 +100,10 @@ p {
     border-left: 2px solid var(--dark-color);
     padding: 0 3rem;
 }
+footer {
+    float: right;
+    padding: 2rem 4rem 2rem 3rem;
+}
 .go-up  li a {
     text-decoration: none;
 }
