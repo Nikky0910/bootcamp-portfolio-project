@@ -18,12 +18,12 @@ https://github.com/Nikky0910/bootcamp-portfolio-project.git
 
 Live webpage: 
 
-
+https://nikky0910.github.io/bootcamp-portfolio-project/
 
 
 The live website should look as follows:
 
-![alt text]()
+![alt text](./assets/images/Portfolio-Home-Page.png)
 
 
 
