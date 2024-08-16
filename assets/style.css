@@ -192,7 +192,7 @@ main .wrapper {
     position: relative;
 }
 
-@media screen and (max-width: 1937px) {
+@media screen and (max-width: 1918px) {
     main .wrapper {
         display: flex;
         flex-wrap: wrap;
@@ -214,6 +214,14 @@ main .wrapper {
     .wrapper .content {
         flex: 1 0 100%;
     }
+    footer {
+        float: none;
+        display: flex;
+        justify-content: center;
+    }
+    .go-up {
+        width: max-content;
+    }
 }
 @media screen and (max-width: 1021px) {
     header {
@@ -226,6 +234,10 @@ main .wrapper {
     h1 {
         font-size: 40px;
         padding:  0.5rem 1rem;
+    }
+    .wrapper .content ul li a {
+        flex-wrap: wrap;
+        width: 50%;
     }
 
 }
